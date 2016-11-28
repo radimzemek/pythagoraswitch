@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+	
+	<title>WoT Pythagora Switch by CHIRIMEN</title>
+
+	<link rel="stylesheet" href="css/glyphicons.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="./js/jquery-3.1.0.js"></script>
+	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script src="./js/webgpioi2c.js"></script>
+	<script src="./js/ADT7410.js"></script>
+	<script src="./js/i2c-grove-light.js"></script>
+	<script src="./js/SFR02.js"></script>
+	<script src="./js/PCA9685v25.js"></script>
+	<script src="./js/app.js" defer></script>
+	
+</head>
+<body>
+	<div class="main">
+		<p>WoT Pythagora Switch by CHIRIMEN</p>
+		<div class="one">
+			<div class="umbrella">
+				<span class="glyphicons glyphicons-umbrella drop x4"></span>
+			</div>
+			<div class="distance_sensor">
+				<span class="glyphicons glyphicons-ruler drop x4"></span>
+				<div class="if_that"  style="font-size:32px">
+					<span class="distance_sensor_value" style="font-size:48px"> </span>
+					<select>
+						<option value="<">&#x3c</option>
+						<option value="=" selected="selected">&#x3d</option>
+						<option value=">">&#x3e</option>
+					</select>
+					<input type="number" name="threshold" value="50">
+				</div>
+			</div>
+			<div class="switch" id="umbrella">
+				<span class="glyphicons glyphicons-power drop x4"></span>
+			</div>
+		</div>
+		<div class="two">
+			<div class="water_pump">
+				<span class="glyphicons glyphicons-shower drop x4"></span>
+			</div>
+			<div class="temperature_sensor">
+				<span class="glyphicons glyphicons-temperature drop x4"></span>
+				<div class="if_that"  style="font-size:32px">
+					<span class="temperature_sensor_value" style="font-size:48px"> </span>
+					<select>
+						<option value="<">&#x3c</option>
+						<option value="=" selected="selected">&#x3d</option>
+						<option value=">">&#x3e</option>
+					</select>
+					<input type="number" name="threshold" value="30">
+				</div>
+			</div>
+			<div class="switch" id="water_pump">
+				<span class="glyphicons glyphicons-power drop x4"></span>
+			</div>
+		</div>
+		<div class="three">
+			<div class="robot_arm">
+				<div><span class="glyphicons glyphicons-robot drop x4"></span></div>
+			</div>
+			<div class="light_sensor">
+				<span class="glyphicons glyphicons-brightness-reduce drop x4"></span>
+				<div class="if_that"  style="font-size:32px">
+					<span class="light_sensor_value" style="font-size:48px"> </span>
+					<select>
+						<option value="<">&#x3c</option>
+						<option value="=" selected="selected">&#x3d</option>
+						<option value=">">&#x3e</option>
+					</select>
+					<input type="number" name="threshold" value="100">
+				</div>
+			</div>
+			<div class="switch" id="robot_arm">
+				<span class="glyphicons glyphicons-power drop x4"></span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
